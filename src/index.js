@@ -5,12 +5,12 @@ import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import store from "./redux/phonebook/pnonebook-store";
+import phonebookStore from "./redux/phonebook/pnonebook-store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store.store}>
-      <PersistGate loading={null} persistor={store.persistor}>
+    <Provider store={phonebookStore.store}>
+      <PersistGate loading={null} persistor={phonebookStore.persistor}>
         <BrowserRouter>
           <App />
         </BrowserRouter>
