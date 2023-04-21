@@ -1,5 +1,3 @@
-//===========REDUX_TOOLKIT==============
-
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 import {
@@ -14,7 +12,7 @@ import {
 } from "redux-persist";
 
 import storage from "redux-persist/lib/storage";
-import contactsReducer from "./phonebook-reducer";
+import phonebookSlice from "./phonebook-slice";
 
 const persistConfig = {
   key: "contacts",
@@ -33,7 +31,7 @@ const middleware = [
 
 export const store = configureStore({
   reducer: {
-    contacts: persistReducer(persistConfig, contactsReducer),
+    contacts: persistReducer(persistConfig, phonebookSlice),
   },
   middleware,
   devTools: process.env.NODE_ENV === "development",

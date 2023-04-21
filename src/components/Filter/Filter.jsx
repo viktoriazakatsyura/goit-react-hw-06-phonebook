@@ -2,7 +2,7 @@
 import { Input } from '../ContactForm/ContactForm.styles';
 import { Text } from './Filter.styles';
 import { useSelector, useDispatch } from 'react-redux';
-import  * as actions from '../../redux/phonebook/phonebook-actions';
+import  * as actions from '../../redux/phonebook/phonebook-slice';
 import { getFilter } from '../../redux/phonebook/pnonebook-selector';
 
 const Filter = () =>{

@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Label, Input, ButtonAdd, Span } from './ContactForm.styles'
 
 import { useSelector, useDispatch  } from "react-redux";
-import *as actions from '../../redux/phonebook/phonebook-actions';
+import *as actions from '../../redux/phonebook/phonebook-slice';
 import { getContacts } from "../../redux/phonebook/pnonebook-selector";
 
 

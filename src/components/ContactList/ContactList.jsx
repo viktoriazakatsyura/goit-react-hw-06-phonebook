@@ -1,6 +1,6 @@
 import { Contact, ContactItem, ButtonDelete, Text } from './ContactList.styles'
 import { useSelector, useDispatch } from 'react-redux';
-import * as actions from '../../redux/phonebook/phonebook-actions';
+import * as actions from '../../redux/phonebook/phonebook-slice';
 import { onFilteredContacts } from '../../redux/phonebook/pnonebook-selector';
 
 
